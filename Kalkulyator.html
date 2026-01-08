@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"
+    intial-scale="1.0">
+    <title>Simple Calculator</title>
+    <body>
+        <div class="Calculator">
+            <input type ="text"id="result"disabled>
+            <br>
+            <input type="button" value="7" onclick="appendValue(7)">
+            <input type="button" value="8" onclick="appendValue(8)">
+            <input type="button" value="9" onclick="appendValue(9)">
+            <input type="button" value="/" onclick="appendValue('/')">
+            <br>
+            <input type="button" value="4" onclick="appendValue(4)">
+            <input type="button" value="5" onclick="appendValue(5)">
+            <input type="button" value="6" onclick="appendValue(6)">
+            <input type="button" value="*" onclick="appendValue('*')">
+            <br>
+            <input type="button" value="1" onclick="appendValue(1)">
+            <input type="button" value="2" onclick="appendValue(2)">
+            <input type="button" value="3" onclick="appendValue(3)">
+            <input type="button" value="-" onclick="appendValue('-')">
+            <br>
+            <input type="button" value="0" onclick="appendValue(0)">
+            <input type="button" value="C" onclick="clearResult()">
+            <input type="button" value="=" onclick="calculateResult()">
+            <input type="button" value="+" onclick="appendValue('+')">
+          </div>
+          <script src="site.js"></script>
+          <style>
+            body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+
+  .calculator {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="button"] {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+
+  input[type="text"] {
+    width: 210px;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  input[type="button"]:hover {
+    background-color: #f0f0f0;
+  }
+
+          </style>
+    </body>
+</head>
+</html>
